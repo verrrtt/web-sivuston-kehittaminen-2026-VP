@@ -1,0 +1,50 @@
+p {
+      color: blue;
+    }
+    
+    body {
+      background-image: url('artbreeder-mixer-2024-12-03T12_06_18.764Z\ copy.jpeg');
+      background-size: cover;
+    }
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+      font-size: 2em;
+    }
+  h2 {
+      font-size: 2em;
+      color: thistle;
+    }
+
+    table {
+  background-color: rgba(0, 0, 0, 0); /* Taustaväri valkoiseksi */
+  color: rgb(255, 255, 255);            /* Teksti mustaksi, jotta se näkyy */
+  border-collapse: collapse; /* Poistaa tyhjät välit solujen välistä */
+  width: 50%;              /* Valinnainen: säätää taulukon leveyttä */
+}
+
+th, td {
+  border: 1px solid #ccc;  /* Lisää ohuet reunat, jotta solut erottuvat */
+  padding: 8px;            /* Lisää hieman tilaa tekstin ympärille */
+}
+
+.img {
+  width: 100%;
+  height: 50px;
+    object-fit: cover;
+}
+ol, ul {
+    color: white;
+  width: 100%;
+  height: 50px;
+    object-fit: cover;
+}
+
+
+a.link, a:link, a:visited {
+    color: white;
+    font-size: 2em;
+  width: 100%;
+  height: 150px;
+    object-fit: cover;
+}
