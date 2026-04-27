@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>My World</title>
+        <img src="artbreeder-mixer-2024-12-03T12_06_18.764Z copy.jpeg" alt="Sample Image" class="filter-image">
+
+        <style>
+                     @keyframes fadeInHeader { 
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        } 
+
+    @keyframes pulseButton {
+        0% {
+            transform: scale(1);
+            background-color: #4CAF50;
+        }
+        50% {
+            transform: scale(1.1);
+            background-color: #45a049;
+        }
+        100% {
+            transform: scale(1);
+            background-color: #ba02a1;
+        }
+    }
+            @keyframes move {
+                    from { left: 5px; }
+                    to { left: 100px; }
+            }
+                .animation-box {
+                width: 50px;
+                height: 50px;
+                background-color: lightgreen;
+                position: relative;
+                animation: move 2s infinite alternate;
+            }
+
+
+        .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+      
+
+.pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+
+
+    
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            color: #ffffff;
+            padding: 20px;
+     } 
+    h1 {
+      color: rgb(7, 13, 168);
+    }
+    li:hover {
+        transition: transform 0.3s ease;
+        cursor: default;
+    }
+    .animated-header {
+        animation: fadeInHeader 1.5s ease-out;
+    }
+    li {
+        transition: transform 0.3s ease;
+        cursor: default;
+    }
+
+    li:hover {
+        transform: translateX(10px);
+        color: rgba(236, 0, 196, 0.621);
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: pulseButton 2s infinite;
+    }
+    h1 {
+      color: rgb(7, 13, 168);
+    }
+    </style>
+    <link href="main.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>Welcome to my World</h1>
+        <h1 style="color: rgb(85, 17, 231);">This is a heading</h1>
+        <p>This is a paragraph.</p>
+        <img src="Screenshot 2024-12-03 at 14.30.45.png" alt="Description of image" style="width: 1450px; height: 100px;">
+        
+        <div class="img"></div>
+        <img src="" alt="" sizes="" srcset="">
+    <ul class="pseudo-list">
+        <li>Kahvi</li>
+        <li>Tee</li>
+        <li>Vesi</li>
+        <style>
+            .pseudo-list li:nth-child(odd) {
+                background-color: rgb(210, 22, 22);
+            }
+            
+            .pseudo-list li:nth-child(even) {
+                background-color: rgb(0, 0, 0);
+            }
+        </style>
+    </ul>
+
+    <style>
+    .filter-image:hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .filter-image:hover {
+    filter: grayscale(0%);
+  }
+    </style>
+    <h2>Who am i?</h2> 
+    <div class="h2" style="color: rgb(255, 255, 255);">Who am i?</div>
+     <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Vertti</td>
+            <td>22</td>
+            <td>Helsinki</td>
+        </tr>
+
+    </table>
+    <blockquote class="quote">
+        This is a sample quote.
+      </blockquote>
+      
+
+    <h2>A few facts about me:</h2>
+    <ol>
+        <li>22 years old</li>
+        <li>Student</li>
+        <li>Chill guy</li>
+    </ol>
+
+    <blockquote class="quote">
+        This is a sample quote.
+      </blockquote>
+    
+    <h2>I like:</h2>
+    <ul>
+        <li>Chocolate</li>
+        <li>Music</li>
+        <li>Food:))</li>
+    </ul>
+    <a href="https://ghpages.noahdoersing.com/uji/">Here's a link to my favorite website :))</a>
+   
+        <form>
+            <h1>Let's be friends!</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

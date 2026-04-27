@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuaalinen Lemmikkikivi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .rock-container {
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .rock-container:active {
+            transform: scale(2);
+        }
+
+.rock {
+    width: 300px;
+    height: 120px;
+    background-color: #808080;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+    box-shadow: inset -10px -10px 20px rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.eye {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    border: 2px solid black;
+}
+
+.eye-left { left: 40px; }
+.eye-right { right: 40px; }
+
+.pupil {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.mouth {
+    width: 40px;
+    height: 10px;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+}
+
+h1 { margin-bottom: 10px; }
+p { color: #666; }
+
+.status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Tapaa "Kalle Kivi"</h1>
+    <p>Hän on hiljainen, mutta uskollinen.</p>
+
+    <div class="rock-container" onclick="petRock()">
+        <div class="rock">
+            <img src="screenshot 2023-10-04.png" alt="Rock Image" style="width: 300px; height: 120px;">
+            <div class="eye eye-left"><div class="pupil"></div></div>
+            <div class="eye eye-right"><div class="pupil"></div></div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+
+    <ul class="pseudo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
